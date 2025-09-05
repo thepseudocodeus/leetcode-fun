@@ -1,5 +1,6 @@
 from typing import List
 
+
 def TwoSum(nums: List[int], target: int) -> List[int]:
     seen = {}
     print(f"List: {nums}")
