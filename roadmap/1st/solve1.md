@@ -1,14 +1,13 @@
 
 # FUNDAMENTALS
 
-
 ## Fundamentals of Problem Solving
 
 Goal: Master the fundamentals of algorithms and data structures. At this stage, the focus is on building a solid foundation of computational thinking and becoming fluent with basic tools. You should be able to recognize when to use a simple data structure like a hash map or when a two-pointer approach will be more efficient. The problems here are a mix of easy and medium difficulty.
 
-[ ] Two Sum
+[x] Two Sum
 
-[ ] Valid Parentheses
+[x] Valid Parentheses
 
 [ ] Merge Two Sorted Lists
 
