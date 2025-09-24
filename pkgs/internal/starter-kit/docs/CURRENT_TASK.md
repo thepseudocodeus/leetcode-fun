@@ -1,0 +1,1 @@
+# Current Task\n\nFocus only on this task today. Keep scope small.\n

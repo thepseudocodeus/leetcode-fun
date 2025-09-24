@@ -1,0 +1,23 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  build:
+    cmds:
+      - uv run python3 -m pkgs.internal.solver.solver
+
+  greet_user:
+    desc: "Greet the user with a name."
+    vars:
+      USER_NAME: '{{.USER_NAME| default "DefaultUser"}}'
+    cmds:
+      - echo "Hello, {{.USER_NAME}}!"

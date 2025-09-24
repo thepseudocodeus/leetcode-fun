@@ -1,0 +1,1 @@
+# Socratic Prompts\n\n- What is the simplest case?\n- What assumptions am I making?\n- Can I falsify this with a counterexample?\n- What invariant must always hold?\n

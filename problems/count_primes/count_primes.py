@@ -18,7 +18,6 @@ Hypothesis:
 
 
 class Solution:
-
     def countPrimes(self, n: int) -> int:
         if n < 2:
             return 0
@@ -70,8 +69,9 @@ class Solution:
 
         return count
 
-    def maybe_prime(self, n: int, prime_map: Dict[int, int]) -> Tuple[bool, Dict[int, int]]:
-
+    def maybe_prime(
+        self, n: int, prime_map: Dict[int, int]
+    ) -> Tuple[bool, Dict[int, int]]:
         result, prime_map = self.is_known_prime(n, prime_map)
         if result:
             return True, prime_map

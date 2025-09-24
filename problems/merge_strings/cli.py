@@ -40,7 +40,7 @@ def process_all(adict: dict) -> bool:
     for k, v in adict.items():
         w1, w2 = v["input"]
         exp = v["expect"]
-        print(f"{w1+w2}")
+        print(f"{w1 + w2}")
     return output
 
 

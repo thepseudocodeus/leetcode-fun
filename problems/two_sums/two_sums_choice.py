@@ -3,6 +3,7 @@ from typing import List, Optional
 from enum import Enum
 import timeit
 
+
 class Choice(Enum):
     BRUTE = 0
     MAP = 1
@@ -10,8 +11,8 @@ class Choice(Enum):
 
 def brute_force(nums: List[int], target: int) -> list[int]:
     for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            if nums[i]+nums[j] == target:
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
                 return [i, j]
     return []
 
@@ -35,13 +36,13 @@ def process(nums: List[int], target: int, choice: Enum) -> Optional[List[int]]:
             t1 = timeit.default_timer()
             result = brute_force(nums, target)
             t2 = timeit.default_timer()
-            print(f"Brute force took {t2-t1} seconds")
+            print(f"Brute force took {t2 - t1} seconds")
             return result
         case Choice.MAP:
             t1 = timeit.default_timer()
             result = map_solution(nums, target)
             t2 = timeit.default_timer()
-            print(f"Map solution took {t2-t1} seconds")
+            print(f"Map solution took {t2 - t1} seconds")
             return result
         case _:
             raise ValueError("Invalid choice")
