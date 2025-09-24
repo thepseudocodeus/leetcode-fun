@@ -21,3 +21,8 @@ tasks:
       USER_NAME: '{{.USER_NAME| default "DefaultUser"}}'
     cmds:
       - echo "Hello, {{.USER_NAME}}!"
+
+  merge_two_lists:
+    desc: "Merge 2 sorted linked lists into 1 sorted linked list."
+    cmds:
+      - uv run python3 -m problems.merge_two_lists.mtl
