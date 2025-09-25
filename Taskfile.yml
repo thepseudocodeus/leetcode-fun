@@ -26,3 +26,8 @@ tasks:
     desc: "Merge 2 sorted linked lists into 1 sorted linked list."
     cmds:
       - uv run python3 -m problems.merge_two_lists.mtl
+
+  poc:
+    desc: "Sovle the current problem in marimo."
+    cmds:
+      - uv run marimo edit

@@ -43,7 +43,8 @@
         "ryanluker.vscode-coverage-gutters",
         "eamodio.gitlens",
         "charliermarsh.ruff",
-        "ms-python.black-formatter"
+        "ms-python.black-formatter",
+        "LeetCode.vscode-leetcode"
       ],
       "settings": {
         "python.defaultInterpreterPath": "/usr/local/bin/python",
